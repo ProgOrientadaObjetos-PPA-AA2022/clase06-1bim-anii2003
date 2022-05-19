@@ -1,0 +1,7 @@
+Datos de Vendedor
+Nombre: René 
+Edad: 38
+Salario mínimo: 100,00
+Número de autos: 1
+Pago mensual: 250,00
+
