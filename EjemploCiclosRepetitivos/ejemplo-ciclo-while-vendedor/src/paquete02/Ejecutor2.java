@@ -7,7 +7,7 @@ package paquete02;
 
 import java.util.Scanner;
 
-public class Ejecutor {
+public class Ejecutor2 {
 
     public static void main(String[] args) {
         // variables para ingreso de datos
@@ -36,16 +36,9 @@ public class Ejecutor {
             // con los datos ingresados se crea el objeto de tipo Vendedor
             Vendedor v = new Vendedor(nombre, edad, sMinino, autos);
             v.calcularPagoMensual();
-            cadenaFinal = String.format("%s\nDatos de Vendedor\n"
-                    + "Nombre: %s\n"
-                    + "Edad: %s\n"
-                    + "Salario mínimo: %.2f\n"
-                    + "Número de autos: %d\n"
-                    + "Pago mensual: %.2f\n\n",
+            cadenaFinal = String.format("%s%s\n",
                     cadenaFinal,
-                    v.obtenerNombres(), v.obtenerEdad(),
-                    v.obtenerSalarioMinimo(), v.obtenerNumeroAutos(),
-                    v.obtenerPagoMensual());
+                    v);
 
             entrada.nextLine(); // limpieza del buffer
             System.out.println("Desea ingresar más vendedores. Ingrese n para"

@@ -34,10 +34,13 @@ public class LibretaCalificacion {
         }
 
         promedio = suma / obtenerCalificaciones().length;
+        // O también puede ser
+        // promedio = suma / calificaciones.legth
     }
 
     public void establecerPromedioCualitativo() {
-        if ((obtenerPromedio() >= 0) && (obtenerPromedio() <= 3.09)) {
+        /*if ((obtenerPromedio() >= 0) && (obtenerPromedio() <= 3.09)) {*/
+        if ((promedio >= 0) && (promedio <= 3.09)) {
             promedioCualitativo = "Regular";
         } else {
             if ((obtenerPromedio() >= 3.1) && (obtenerPromedio() <= 5.09)) {
