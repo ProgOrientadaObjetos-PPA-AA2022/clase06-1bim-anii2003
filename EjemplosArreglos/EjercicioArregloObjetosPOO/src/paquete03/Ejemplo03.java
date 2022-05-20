@@ -7,7 +7,7 @@ package paquete03;
 
 import paquete01.Calificacion;
 
-public class EjemploTres {
+public class Ejemplo03 {
     public static void main(String[] args) {
         // crear un arreglo de objetos de tipo Calificacion
         Calificacion [] calificaciones = {new Calificacion(10, "Computación"), 

@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete06;
-
+package paquete07;
 
 public class Ejecutor {
     public static void main(String[] args) {
-      
+              
+        
         Calificacion c1 = new Calificacion(10, "Computación");
-        Calificacion c2 = new Calificacion(10, "Lógica");
-        Calificacion c3 = new Calificacion(10, "Literatura");
+        Calificacion c2 = new Calificacion(9, "Lógica");
+        Calificacion c3 = new Calificacion(8, "Literatura");
         
         Profesor profesor1 = new Profesor("Tara Hernandez", "contratado");
         Profesor profesor2 = new Profesor("Gregory Walsh", "nombramiento");
@@ -20,8 +20,8 @@ public class Ejecutor {
         c1.establecerProfesor(profesor1);
         c2.establecerProfesor(profesor2);
         c3.establecerProfesor(profesor3);
-        
-        Calificacion [] lista = {c1, c2, c2};
+                
+        Calificacion [] lista = {c1, c2, c3};
         
         
         LibretaCalificacion libreta1 = new LibretaCalificacion("Justin Powers",

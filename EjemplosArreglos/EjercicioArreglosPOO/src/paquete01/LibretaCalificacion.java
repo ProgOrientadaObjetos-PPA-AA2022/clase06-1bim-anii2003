@@ -25,7 +25,7 @@ public class LibretaCalificacion {
         estudiante = n;
     }
 
-    public void establecerPromedio() {
+    public void establecerPromedio() { // No tiene parámetros ya que trabaja en función de lo que tiene
         double suma = 0;
 
         // for (int i = 0; i < calificaciones.length; i++) {
@@ -89,12 +89,12 @@ public class LibretaCalificacion {
         cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
                 obtenerEstudiante());
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
-            cadena = String.format("%s\t\t%.2f\n", cadena,
-                    obtenerCalificaciones()[i]);
+            cadena = String.format("%s\t%.2f%s\n", cadena,
+                    obtenerCalificaciones()[i],"/10.0");
         }
-        cadena = String.format("%sPromedio calificaciones: %.2f\n"
-                + "Promedio cuantitativo: %s\n",
-                cadena, obtenerPromedio(), obtenerPromedioCualitativo());
+        cadena = String.format("%sPromedio calificaciones:\n\t%.2f\n"
+                + "Promedio cuantitativo:\n\t%s\n",
+                cadena, obtenerPromedio(), obtenerPromedioCualitativo().toUpperCase());
         return cadena;
     }
 }
